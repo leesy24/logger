@@ -56,7 +56,7 @@ main()
 {
     char msg[100];
 
-    logger_init("log_", "", "log", 1024*1024, 1000);
+    logger_init("/tmp/log_", "", "log", 1024*1024, 1000);
 
     int i;
     for(i = 0; i < 10000000; i ++)
@@ -65,3 +65,4 @@ main()
         logger_out(msg);
     }
 }
+
